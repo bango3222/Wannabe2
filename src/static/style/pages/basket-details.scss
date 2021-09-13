@@ -1,0 +1,303 @@
+@import "src/static/style/vars";
+.basket-details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 48px;
+  flex-wrap: wrap;
+  margin-bottom: 48px;
+}
+.basket-details-info {
+  width: 100%;
+  max-width: 765px;
+}
+.basket-details-wrapp {
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+  cursor: pointer;
+}
+.basket-details-wrapp p {
+  font-weight: 350;
+  font-size: 34px;
+  line-height: 50px;
+  letter-spacing: -0.02em;
+  margin-left: 24px;
+  color: #898989;
+}
+@media (max-width: 500px) {
+  .basket-details-wrapp p {
+    font-size: 28px;
+  }
+}
+
+.basket-details-wrapp-col {
+  display: flex;
+  margin-bottom: 32px;
+  width: 100%;
+  max-width: 765px;
+  flex-wrap: wrap;
+}
+.basket-details-col {
+  max-width: 371px;
+  width: 100%;
+  margin-right: 23px;
+}
+@media (max-width: 800px) {
+  .basket-details-col {
+    margin-right: 0;
+  }
+}
+.basket-details-col:last-child {
+  margin-right: 0px;
+}
+.basket-details-col-number-home {
+  display: flex;
+}
+.basket-details-col-number-row {
+  max-width: 174px;
+}
+.basket-details-col-number-row:first-child {
+  margin-right: 24px;
+}
+.basket-details-delivery {
+  margin-bottom: 80px;
+}
+.basket-details-delivery p {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+.radio {
+  margin-bottom: 16px;
+}
+.radio label {
+  font-size: 16px;
+  letter-spacing: 0.005em;
+  font-weight: 300;
+  margin-left: 8px;
+}
+.basket-details-communication p {
+  margin-bottom: 32px;
+  font-size: 24px;
+  font-weight: 500;
+}
+.basket-details-comment {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 80px;
+}
+.basket-details-comment textarea {
+  border-radius: 4px;
+  border: 1px solid $black;
+  width: 100%;
+  height: 112px;
+  padding: 8px;
+  resize: none;
+  font-family: Circe, sans-serif;
+  font-size: 16px;
+}
+.basket-details-bonuses {
+  margin-bottom: 48px;
+}
+.basket-details-bonuses-title p {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+.basket-price {
+  max-width: 371px;
+  width: 100%;
+  position: relative;
+}
+.basket-price-border {
+  border-left: 1px solid #f2f2f2;
+  padding-left: 16px;
+  position: sticky;
+  top: 195px;
+}
+@media (max-width: 1200px) {
+  .basket-price-border {
+    border: 0;
+    padding-left: 4px;
+  }
+}
+.basket-price-all {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 56px;
+}
+.basket-price-result {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 35px;
+  margin-bottom: 24px;
+}
+@media (max-width: 500px) {
+  .basket-price-result {
+    font-size: 20px;
+  }
+  .basket-price-all {
+    font-size: 14px;
+  }
+}
+.basket-price-btn a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 56px;
+  border-radius: 4px;
+  background-color: $purple;
+  color: $white;
+}
+.basket-price-btn a:disabled {
+  background-color: $black;
+}
+.basket-price-btn a:hover {
+  background-color: rgba(192, 180, 214, 0.78);
+}
+.radio_input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.radio_input + label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+.radio_input + label::before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid $black;
+  border-radius: 50%;
+  margin-right: 8px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+.radio_input:checked + label::before {
+  background-image: url(/image/Svg-ellipse.svg);
+}
+.switch input {
+  display: none;
+}
+.switch label {
+  display: flex;
+  align-items: center;
+}
+.switch p {
+  margin-left: 56px;
+  width: 200px;
+}
+.switch {
+  display: inline-block;
+  width: 48px;
+  height: 24px;
+  border-radius: 19px;
+  background: $white;
+  z-index: 0;
+  margin: 0;
+  padding: 0;
+  border: 1px solid $black;
+  cursor: pointer;
+  position: relative;
+  transition-duration: 300ms;
+}
+.switch::after {
+  content: "";
+  height: 12px;
+  width: 12px;
+  border-radius: 17px;
+  background: $black;
+  top: 6px;
+  left: 10px;
+  transition-duration: 300ms;
+  position: absolute;
+  z-index: 1;
+}
+
+.switch-on::after {
+  left: 27px;
+}
+.nice-select:hover {
+  border-color: $black;
+}
+.basket-price-promo a {
+  display: flex;
+  align-items: center;
+}
+.basket-price-promo a svg {
+  margin-right: 8px;
+}
+.basket-price-promo-input {
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.basket-price-promo-input input {
+  border: none;
+  outline: none;
+  height: 24px;
+  font-size: 16px;
+  font-weight: 350;
+  letter-spacing: 0.005em;
+  border-bottom: 1px solid $black;
+  margin-right: 16px;
+  max-width: 152px;
+}
+.basket-price-promo-input a {
+  height: 24px;
+  background-color: $black;
+  color: $white;
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: 300;
+  font-size: 14px;
+}
+@media (max-width: 380px) {
+  .basket-price-promo-input a {
+    margin-top: 8px;
+    max-width: 120px;
+    width: 100%;
+    justify-content: center;
+  }
+}
+.basket-price-promo-input a:hover {
+  background-color: $hover;
+}
+.basket-details-back {
+  margin-bottom: 32px;
+}
+@media (max-width: 816px) {
+  .basket-details-back {
+    display: none;
+  }
+}
+.basket-details-back a {
+  display: flex;
+  align-items: center;
+}
+
+.basket-details-back a svg {
+  transform: rotate(90deg);
+  margin-right: 8px;
+}
+.basket-details-back a:hover {
+  color: rgba(192, 180, 214, 0.78);
+}
+.basket-details-back a svg path {
+  transition: 0.3s ease-in;
+}
+.basket-details-back a:hover svg path {
+  stroke: $hover;
+}

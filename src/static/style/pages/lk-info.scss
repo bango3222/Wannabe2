@@ -1,0 +1,133 @@
+@import "src/static/style/vars";
+.input-info__select select {
+  width: 100%;
+  height: 43px;
+  border-radius: 4px;
+  border: 1px solid $black;
+  margin-bottom: 16px;
+  font-family: Circe, sans-serif;
+  font-weight: 350;
+  font-size: 16px;
+  letter-spacing: -0.01em;
+  padding: 9px 8px;
+  appearance: none !important;
+}
+.lk-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 80px;
+}
+.lk-info-wrapp {
+}
+.lk-info-center {
+  max-width: 800px;
+  width: 100%;
+}
+.lk-info-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.lk-info-col {
+  max-width: 371px;
+  width: 100%;
+  margin-right: 24px;
+  @media (max-width: 784px) {
+    margin-right: 0;
+  }
+}
+.lk-info-title {
+  font-weight: 350;
+  font-size: 34px;
+  line-height: 50px;
+  letter-spacing: -0.005em;
+  margin-bottom: 32px;
+  margin-top: 80px;
+}
+.lk-info-col-wrapp {
+  display: flex;
+}
+.lk-info-col-wrapp-col {
+  max-width: 174px;
+}
+.lk-info-col-wrapp-col:first-child {
+  margin-right: 24px;
+}
+.lk-info-btn {
+  display: flex;
+  justify-content: space-between;
+  max-width: 765px;
+  width: 100%;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+.lk-info-without-editing-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+.lk-info-btn-src {
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.0025em;
+}
+.lk-info-btn-src a:hover {
+  color: rgba(192, 180, 214, 0.78);
+}
+.lk-info-btn-main {
+  background-color: $black;
+  border-radius: 4px;
+  color: $white;
+  height: 40px;
+  max-width: 182px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  letter-spacing: 0.005em;
+  font-weight: 300;
+  margin-top: 16px;
+  transition: 0.3s ease-in;
+}
+.lk-info-btn-main:hover {
+  background-color: rgba(192, 180, 214, 0.78);
+}
+.lk-info-btn-main a {
+  color: $white;
+}
+.lk-info-pas {
+}
+.input-info-select {
+  display: flex;
+  max-width: 371px;
+  width: 100%;
+}
+.input-info-select p {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  font-size: 12px;
+  letter-spacing: 0.004em;
+  margin-bottom: 17px;
+  font-weight: 400;
+}
+.input-info-select {
+}
+.input-info-select-btn {
+  border: 1px solid #000000;
+  max-width: 371px;
+  border-radius: 4px;
+  margin-top: 4px;
+  height: 43px;
+  font-size: 16px;
+}
+@media (max-width: 500px) {
+  .lk-info-title {
+    font-size: 28px;
+  }
+  .lk-history-title {
+    font-size: 28px;
+  }
+  .fav-title {
+    font-size: 28px;
+  }
+}

@@ -1,0 +1,35 @@
+@import "src/static/style/vars";
+.bonus-program {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  min-height: calc(100vh - 600px);
+}
+.bonus-program__title {
+  max-width: 800px;
+  font-weight: 350;
+  font-size: 34px;
+  line-height: 50px;
+  letter-spacing: -0.005em;
+  margin-bottom: 32px;
+}
+.bonus-program__text {
+  max-width: 800px;
+  font-weight: 300;
+  font-size: 20px;
+}
+.bonus-program__text p {
+  margin-bottom: 24px;
+}
+
+.bonus-program__text-title {
+  font-weight: 500;
+  margin-bottom: 32px;
+  margin-top: 48px;
+}
+.bonus-program__text a {
+  border-bottom: 1px solid $black;
+}
+.bonus-program__text a:hover {
+  color: $hover;
+  border-bottom: 1px solid $hover;
+}

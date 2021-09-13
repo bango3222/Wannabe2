@@ -1,0 +1,109 @@
+@import "src/static/style/vars";
+.wholesale-sales {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  width: 100%;
+  min-height: calc(100vh - 600px);
+}
+
+.wholesale-sales__title-text {
+  text-align: center;
+  margin-bottom: 32px;
+  font-size: 26px;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wholesale-sales__title-text p {
+  max-width: 800px;
+}
+.wholesale-sales__title {
+  font-weight: 300;
+  font-size: 34px;
+  line-height: 50px;
+  letter-spacing: -0.005em;
+  margin-bottom: 32px;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 500px) {
+  .wholesale-sales__title-text {
+    font-size: 16px;
+  }
+  .wholesale-sales__title {
+    font-size: 28px;
+  }
+  .wholesale-sales__text {
+    font-size: 16px;
+    padding: 10px;
+  }
+}
+
+.wholesale-sales__text-btn {
+  display: flex;
+  max-width: 300px;
+  width: 100%;
+}
+.wholesale-sales__text-btn a {
+  background-color: $purple;
+  border-radius: 4px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 32px;
+  color: $white;
+  max-width: 300px;
+  width: 100%;
+  font-size: 16px;
+}
+.wholesale-sales__text-btn a:hover {
+  background-color: $hover;
+}
+.wholesale-sales-info {
+  max-width: 800px;
+  background-color: #f0f0f0;
+  padding: 30px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 32px;
+}
+.wholesale-sales-info p {
+  margin-left: 8px;
+}
+.wholesale-sales-info p {
+  margin-bottom: 0;
+}
+.wholesale-sales-info svg path {
+  stroke: $purple;
+}
+.wholesale-sales-wrapp {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+.wholesale-sales-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 371px;
+  width: 100%;
+}
+.input-info {
+  display: flex;
+  flex-direction: column;
+}
+.input-info {
+  width: 100%;
+}
+.wholesale-sales-info a {
+  border-bottom: 1px solid $black;
+}
+.wholesale-sales-info a:hover {
+  color: $hover;
+  border-bottom: 1px solid $hover;
+}

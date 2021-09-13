@@ -1,0 +1,28 @@
+@font-face {
+  font-family: Circe;
+  src: local('./fonts/CRC65'),
+  url('../fonts/CRC65.woff') format('woff'),
+  url('../fonts/CRC65.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Circe;
+  src: local('../fonts/CRC55'),
+  url('../fonts/CRC55.woff') format('woff'),
+  url('../fonts/CRC55.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: Circe;
+  src: local('../fonts/CRC35'),
+  url('../fonts/CRC35.woff') format('woff'),
+  url('../fonts/CRC35.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+

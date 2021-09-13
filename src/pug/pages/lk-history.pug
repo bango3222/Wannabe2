@@ -1,0 +1,100 @@
+include ../blocks/mixins/mixins.pug
+doctype html
+html(lang="ru-RU")
+    include ../blocks/head/head.pug
+    body
+        include ../blocks/header/header
+        .lk-history.max-width1200px
+            .lk-history-title
+                p История заказов
+            .lk-history-element
+                .lk-history-element-title
+                    p Заказ № 32
+                .lk-history-element-wrapp 
+                    .lk-history-element-col
+                        .lk-history-element-col-wrapp
+                            .lk-history-element-all-product 
+                                .lk-history-element-product 
+                                    img(src="/image/card__img.png", alt="")
+                                    .lk-history-element-product-info
+                                        .lk-history-element-product-info-name 
+                                            p Миникольцо Полоски с камнями
+                                        .lk-history-element-product-info-price
+                                            p 3 900 р.
+                                .lk-history-element-product 
+                                    img(src="/image/card__img.png", alt="")
+                                    .lk-history-element-product-info
+                                        .lk-history-element-product-info-name 
+                                            p Миникольцо Полоски с камнями
+                                        .lk-history-element-product-info-price
+                                            p 3 900 р.
+                            .lk-history-element-price
+                                .lk-history-element-price-discount
+                                    p Сумма скидки
+                                    p 0 р.
+                                .lk-history-element-price-all 
+                                    p Итоговая сумма:
+                                    p 11 700 р.
+                    .lk-history-element-col
+                        .lk-history-element-address
+                            .lk-history-element-address-title
+                                p Адрес доставки
+                            .lk-history-element-address-info
+                                .entered-information
+                                    .entered-information-title
+                                        p Город
+                                    .entered-information-main 
+                                        p Москва
+                                .entered-information
+                                    .entered-information-title
+                                        p Улица
+                                    .entered-information-main 
+                                        p Ул.Дружбы
+                            .lk-history-element-address-info
+                                .entered-information
+                                    .entered-information-title
+                                        p Дом
+                                    .entered-information-main 
+                                        p Дом 66
+                                .entered-information
+                                    .entered-information-title
+                                        p Квартира
+                                    .entered-information-main 
+                                        p Кв 66
+                                .entered-information
+                                    .entered-information-title
+                                        p Почтовый индекс
+                                    .entered-information-main 
+                                        p 425254
+                        .lk-history-element-delivery
+                            .lk-history-element-delivery-title
+                                p Способ доставки
+                            .lk-history-element-delivery-info
+                                p Доставка почтой России (бесплатно при оплате заказа на сайте)
+                        .lk-history-element-recipient
+                            .lk-history-element-recipient-title
+                                p Данные получателя
+                            .lk-history-element-recipient-info
+                                .entered-information
+                                    .entered-information-title
+                                        p Имя
+                                    .entered-information-main 
+                                        p Иван
+                                .entered-information
+                                    .entered-information-title
+                                        p Фамилия
+                                    .entered-information-main 
+                                        p Иванов
+                            .lk-history-element-recipient-info
+                                .entered-information
+                                    .entered-information-title
+                                        p Телефон
+                                    .entered-information-main 
+                                        p +7 (988) 983 32 32
+                                .entered-information
+                                    .entered-information-title
+                                        p E-mail
+                                    .entered-information-main 
+                                        p ivanov@mail.ru
+            
+        include ../blocks/footer/footer

@@ -1,0 +1,65 @@
+@import "src/static/style/vars";
+.enter-lk {
+  display: flex;
+  justify-content: center;
+}
+.enter-lk-wrapp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 80px;
+  width: 371px;
+}
+.enter-lk-title {
+  font-weight: 350;
+  font-size: 34px;
+  line-height: 50px;
+  letter-spacing: -0.005em;
+  margin-bottom: 32px;
+  margin-top: 80px;
+}
+.enter-lk-src1 a {
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.0025em;
+}
+.enter-lk-btn {
+  max-width: 371px;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 8px;
+}
+.enter-lk-btn a {
+  background-color: $black;
+  border-radius: 4px;
+  color: $white;
+  height: 40px;
+  max-width: 125px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  letter-spacing: 0.005em;
+  font-weight: 300;
+  margin-top: 16px;
+}
+.enter-lk-btn a:hover {
+  background-color: rgba(192, 180, 214, 0.78);
+}
+.enter-lk-src2 {
+  max-width: 371px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.enter-lk-src2 a {
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.0025em;
+}
+.enter-lk-src2 a:hover {
+  color: rgba(192, 180, 214, 0.78);
+}
+.enter-lk-src1 a:hover {
+  color: rgba(192, 180, 214, 0.78);
+}

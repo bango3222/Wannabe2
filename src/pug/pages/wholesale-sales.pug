@@ -1,0 +1,41 @@
+include ../blocks/mixins/mixins.pug
+doctype html
+html(lang="ru-RU")
+    include ../blocks/head/head.pug
+    body
+        include ../blocks/header/header
+        .wholesale-sales.max-width1200px
+            .wholesale-sales__title
+                p Оптовые продажи
+            .wholesale-sales__title-text
+                p Мы продаем наши украшения оптом и будем рады, если в каждом городе появится представитель нашей марки.
+            .wholesale-sales-wrapp
+                .wholesale-sales-info
+                        include ../../static/image/Svg-Info.svg
+                        p Вы обнаружили брак на украшении, которое купили на нашем сайте?<br>Перейдите в раздел <a href="/guarantee.html">Гарантии</a>.
+                .wholesale-sales-block
+                    .input-info    
+                        p ФИО
+                        .input-info__input
+                            input(type="text" name="FIO" placeholder="Введите ФИО")
+                    .input-info    
+                        p E-mail
+                        .input-info__input
+                            input(type="email" name="name" placeholder="E-mail")
+                    .input-info    
+                        p Телефон
+                        .input-info__input
+                            input(type="tel" id="phone" name="name" placeholder="+7")
+                    .input-info    
+                        p Город
+                        .input-info__input
+                            input(type="text" name="name" placeholder="Ваш город")
+                    .input-info    
+                        p Ссылка на магазин
+                        .input-info__input
+                            input(type="text" name="name" placeholder="Ссылка на магазин")
+                .wholesale-sales__text-btn 
+                    a(href="#") Отправить
+                
+        include ../blocks/mailing/mailing
+        include ../blocks/footer/footer   

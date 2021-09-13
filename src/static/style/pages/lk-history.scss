@@ -1,0 +1,148 @@
+@import "src/static/style/vars";
+.lk-history {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  min-height: calc(100vh - 600px);
+}
+.lk-history-title {
+  font-weight: 350;
+  font-size: 34px;
+  line-height: 50px;
+  letter-spacing: -0.005em;
+  margin-bottom: 32px;
+}
+.lk-history-element {
+  border: 1px solid $purple;
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 24px;
+}
+.lk-history-element-title {
+  font-size: 28px;
+  line-height: 41px;
+  letter-spacing: 0.005em;
+  color: $white;
+  background-color: $purple;
+  padding: 11px 16px;
+}
+.lk-history-element-wrapp {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 32px;
+  flex-wrap: wrap;
+}
+.lk-history-element-product {
+  display: flex;
+  margin-bottom: 16px;
+  max-width: 371px;
+}
+.lk-history-element-product img {
+  max-width: 75px;
+  width: 100%;
+  margin-right: 24px;
+}
+.lk-history-element-product-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.lk-history-element-product-info-name p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 114%;
+}
+.lk-history-element-product-info-price p {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.005em;
+}
+.lk-history-element-price {
+}
+@media (max-width: 860px) {
+  .lk-history-element-price {
+    margin-bottom: 56px;
+  }
+}
+.lk-history-element-price-discount {
+  display: flex;
+  justify-content: space-between;
+  max-width: 371px;
+  font-size: 16px;
+  letter-spacing: 0.005em;
+  margin-bottom: 16px;
+}
+.lk-history-element-price-all {
+  display: flex;
+  justify-content: space-between;
+  max-width: 371px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 35px;
+}
+.lk-history-element-col {
+  width: 100%;
+  max-width: 371px;
+  margin-left: 4px;
+}
+.lk-history-element-col-wrapp {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+}
+.lk-history-element-address {
+  margin-bottom: 56px;
+}
+.lk-history-element-address-title {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 35px;
+  margin-bottom: 32px;
+}
+.lk-history-element-address-info {
+  display: flex;
+  margin-bottom: 16px;
+}
+.entered-information {
+  margin-right: 24px;
+  margin-bottom: 16px;
+}
+.entered-information-title {
+  font-weight: 350;
+  font-size: 12px;
+  letter-spacing: 0.004em;
+  margin-bottom: 4px;
+}
+.entered-information-main {
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing: -0.01em;
+}
+.lk-history-element-delivery {
+  margin-bottom: 56px;
+}
+.lk-history-element-delivery-title {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 35px;
+  margin-bottom: 32px;
+}
+.lk-history-element-delivery-info {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.005em;
+}
+.lk-history-element-recipient {
+}
+.lk-history-element-recipient-title {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 35px;
+  margin-bottom: 32px;
+}
+.lk-history-element-recipient-info {
+  display: flex;
+  margin-bottom: 16px;
+}

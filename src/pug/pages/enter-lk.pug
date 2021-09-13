@@ -1,0 +1,26 @@
+include ../blocks/mixins/mixins.pug
+doctype html
+html(lang="ru-RU")
+    include ../blocks/head/head.pug
+    body
+        include ../blocks/header/header
+        .enter-lk.max-width1200px
+            .enter-lk-wrapp
+                .enter-lk-title 
+                    p Авторизация
+                .input-info    
+                    p E-mail
+                    .input-info__input
+                        input(type="email" name="name" placeholder="E-mail")
+                .input-info 
+                    p Пароль
+                    .input-info__input-password
+                        input(type="password" id="password-input" name="password" placeholder="Введите пароль")
+                        a(href="#").input-info__input-password-control
+                .enter-lk-src1
+                    a(href="/forgot-password.html") Забыли пароль?
+                .enter-lk-btn 
+                    a(href="/lk-info-without-editing.html") Войти
+                .enter-lk-src2
+                    a(href="/reg-lk.html") Зарегистрироваться
+        include ../blocks/footer/footer

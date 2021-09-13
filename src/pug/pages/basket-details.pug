@@ -1,0 +1,151 @@
+include ../blocks/mixins/mixins.pug
+doctype html
+html(lang="ru-RU")
+    include ../blocks/head/head.pug
+    body
+        include ../blocks/header/header
+        .basket-details.max-width1200px
+            .basket-details-info
+                .basket-details-back
+                    a(href="/basket.html")
+                        include ../../static/image/Svg-arrow.svg
+                        p Ваш заказ
+                .basket-details-info-row
+                    .basket-details-wrapp
+                        include ../../static/image/Svg-1.svg
+                        p Способ доставки
+                    div
+                        .basket-details-wrapp-col
+                            .basket-details-col
+                                .input-info-select
+                                    p Страна
+                                        select(name="country" ).input-info-select-btn
+                                            option(value="Российская Федерация") Российская Федерация
+                                            option(value="Российская Федерация") Российская Федерация
+                                            option(value="Российская Федерация") Российская Федерация
+                                            option(value="Российская Федерация") Российская Федерация
+                                            option(value="Российская Федерация") Российская Федерация
+                                .input-info-select
+                                    p Город
+                                        select(name="city" ).input-info-select-btn
+                                            option(value="Российская Федерация") Волгоград
+                                            option(value="Российская Федерация") Волгоград
+                                            option(value="Российская Федерация") Волгоград
+                                .basket-details-col-number-home
+                                    .basket-details-col-number-row
+                                        .input-info
+                                            p Дом
+                                            .input-info__input
+                                                input(type="text" name="name" placeholder="Введите номер дома")
+                                    .basket-details-col-number-row
+                                        .input-info
+                                            p Квартира
+                                            .input-info__input
+                                                input(type="text" name="name" placeholder="Введите номер квартиры")
+                            .basket-details-col
+                                .input-info-select
+                                    p Регион
+                                        select(name="region" ).input-info-select-btn
+                                            option(value="Российская Федерация") Волгоградская область
+                                            option(value="Российская Федерация") Волгоградская область
+                                            option(value="Российская Федерация") Волгоградская область
+                                .input-info
+                                    p Улица
+                                    .input-info__input
+                                        input(type="text" name="name" placeholder="Ваша улица")
+                                .input-info
+                                    p Почтовый индекс
+                                    .input-info__input
+                                        input(type="text" name="name" placeholder="Ваш почтовый индекс")
+                        .basket-details-delivery
+                            p Выберите способ доставки
+                            .basket-details-delivery-radio
+                                .radio
+                                    input(type="radio" value="free" name="delivery" id="free" checked=true).radio_input
+                                    label(for="free") Доставка почтой России (бесплатно при оплате заказа на сайте)
+                                .radio
+                                    input(type="radio" value="standard" name="delivery" id="standard").radio_input
+                                    label(for="standard")  Стандартная по Москве и МО
+                                .radio
+                                    input(type="radio" value="courier" name="delivery" id="courier").radio_input
+                                    label(for="courier") Доставка курьером в регион РФ и почтой в другие страны 600 р.
+                .basket-details-info-row
+                    .basket-details-wrapp
+                        include ../../static/image/Svg-2.svg
+                        p Личные данные
+
+                    div
+                        .basket-details-wrapp-col
+                            .basket-details-col
+                                .input-info
+                                    p Имя
+                                    .input-info__input
+                                        input(type="text" name="name" placeholder="Введите имя")
+                                .input-info
+                                    p Телефон
+                                    .input-info__input
+                                        input(type="tel" id="phone" name="name" placeholder="+7")
+                            .basket-details-col
+                                .input-info
+                                    p Фамилия
+                                    .input-info__input
+                                        input(type="text" name="name" placeholder="Введите фамилию")
+                                .input-info
+                                    p E-mail
+                                    .input-info__input
+                                        input(type="email" name="name" placeholder="E-mail")
+                        .basket-details-wrapp-col
+                            .basket-details-col
+                                .basket-details-communication
+                                    p Предпочительный способ связи
+                                    .input-info-select
+                                        p Способ связи
+                                            select(name="country" ).input-info-select-btn
+                                                option(value="Российская Федерация") Звонок
+                                                option(value="Российская Федерация") Звонок
+                                                option(value="Российская Федерация") Звонок
+                            .basket-details-col
+                                .basket-details-comment
+                                    textarea(name="comment" cols="30" rows="5" placeholder="Комментарий" )
+                .basket-details-info-row
+                    .basket-details-wrapp
+                        include ../../static/image/Svg-3.svg
+                        p Способ оплаты
+                    div
+                        .basket-details-wrapp-col
+                            .basket-details-payment-radio
+                                .radio
+                                    input(type="radio" value="online" name="payment" id="online" checked=true).radio_input
+                                    label(for="online") Оплата картой (CloudPayments)
+                                .radio
+                                    input(type="radio" value="cash" name="payment" id="cash").radio_input
+                                    label(for="cash")  Наличными курьеру (только по Москве и МО)
+                        .basket-details-bonuses
+                            .basket-details-bonuses-title
+                                p У вас накопилось 580 баллов!
+                            .basket-details-bonuses-switch
+                                .switch
+                                    label(for="bonuses")
+                                        input(type="checkbox" name="bonuses")
+                                    p Использовать баллы
+            .basket-price
+                .basket-price-border
+                    .basket-price-all
+                        .basket-price-name
+                            p Миникольцо Полоски с камнями
+                        .basket-price-name-price
+                            p 3&nbsp;900&nbsp;р.
+                    .basket-price-promo.align-center
+                        a(href="#").basket-price-promo-drop
+                            include ../../static/image/Svg-plas.svg
+                            P Ввести промокод
+                        .basket-price-promo-input.align-center.flex-row
+                            input(type="text" placeholder="Введите промокод")
+                            a(href="#") Применить
+                    .basket-price-result
+                        p Итоговая сумма:
+                        .basket-price-result-price
+                            p 11 700&nbsp;р.
+                    .basket-price-btn 
+                        a(href="#") Оформить заказ
+        include ../blocks/footer/footer

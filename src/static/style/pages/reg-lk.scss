@@ -1,0 +1,131 @@
+@import "src/static/style/vars";
+.reg-lk {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.reg-lk-wrapp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+.reg-lk-title {
+  font-weight: 350;
+  font-size: 34px;
+  line-height: 50px;
+  letter-spacing: -0.005em;
+  margin-bottom: 32px;
+  margin-top: 80px;
+}
+@media (max-width: 500px) {
+  .reg-lk-title {
+    font-size: 28px;
+  }
+}
+.input-info p {
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.004em;
+  margin-bottom: 4px;
+}
+.input-info__input {
+  max-width: 371px;
+  width: 100%;
+  display: flex;
+}
+.input-info input {
+  max-height: 40px;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #000000;
+  background-color: $white;
+  padding: 9px 8px;
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+.input-info__input-password {
+  position: relative;
+  max-width: 371px;
+  display: flex;
+}
+.input-info__input-password-control {
+  position: absolute;
+  top: 11px;
+  right: 20px;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url(/image/Svg-eye.svg) 0 0 no-repeat;
+}
+.input-info__input-control.view {
+  background: url(/image/Svg-visibility_off.svg) 0 0 no-repeat;
+}
+.reg-lk-info-checkbox {
+  max-width: 371px;
+  margin-bottom: 16px;
+}
+.reg-lk-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.reg-lk-checkbox + label {
+  display: inline-flex;
+  user-select: none;
+  cursor: pointer;
+}
+.reg-lk-checkbox + label::before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid $black;
+  border-radius: 4px;
+  margin-right: 8px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+.reg-lk-checkbox:checked + label::before {
+  background-image: url(/image/Svg-Checkbox.svg);
+}
+.reg-lk-info-btn {
+  max-width: 371px;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 8px;
+}
+.reg-lk-info-btn a {
+  background-color: $black;
+  border-radius: 4px;
+  color: $white;
+  height: 40px;
+  max-width: 226px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  letter-spacing: 0.005em;
+  font-weight: 300;
+  margin-top: 16px;
+}
+.reg-lk-info-btn a:hover {
+  background-color: rgba(192, 180, 214, 0.78);
+}
+.reg-lk-info-src {
+  max-width: 371px;
+  display: flex;
+  justify-content: flex-end;
+}
+.reg-lk-info-src a {
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.0025em;
+}
+.reg-lk-info-src a:hover {
+  color: rgba(192, 180, 214, 0.78);
+}

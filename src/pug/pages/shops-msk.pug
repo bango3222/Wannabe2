@@ -1,0 +1,63 @@
+include ../blocks/mixins/mixins.pug
+doctype html
+html(lang="ru-RU")
+    include ../blocks/head/head.pug
+    body
+        include ../blocks/header/header
+        .shops__block
+            .shops__title
+                p Наши магазины
+            .shops__title-text
+                a(href="/shops-msk.html") Москва
+                a(href="/shops-spb.html") Санкт-Петербург
+                a(href="/shops-kaz.html") Казань
+                a(href="/shops-stav.html") Ставрополь
+                a(href="/shops-yuz-sah.html") Южно-Сахалинск
+                a(href="/shops-kras.html") Краснодар 
+                a(href="/shops-sochi.html") Сочи 
+                a(href="/shops-vladivostok.html") Владивосток
+                a(href="/shops-novosibirsk.html") Новосибирск 
+                a(href="/shops-perm.html") Пермь 
+                a(href="/shops-krasnoyarsk.html") Красноярск
+                a(href="/shops-omsk.html") Омск
+                a(href="/shops-saratov.html") Саратов
+                a(href="/shops-abakan.html") Абакан 
+                a(href="/shops-kyrgyzstan.html") Киргизия 
+                a(href="/shops-yakutsk.html") Якутск 
+        .shops__info.max-width1200px
+            .shops__info-col
+                .shops__info-title
+                   p Магазин Wanna?Be!
+                    .shops__info-title-line
+                p м. Дмитровская, ул. Новодмитровская д.1, стр 6, здание Хлебозавода, вход с улицы напротив "Рюмочной", дверь с розовой неоновой надписью "Украшения, пирсинг, ниточки" и вывеской WANNA?BE!
+                p пн-вс 12:00 - 21:00
+                p По вопросам наличия звонить +7 (968) 908 99 98
+            .shops__info-col
+                img(src="../image/shops-msk__img1.webp", alt="")
+        .shops__info.max-width1200px
+            .shops__info-col
+                .shops__info-title
+                   p Универмаг "Цветной"
+                    .shops__info-title-line
+                p Цветной бульвар 15, стр.1, м. Цветной бульвар.2 этаж. Витрины в кассовой зоне.
+                .shops__info-col-row
+                    p пн-сб 10:00 - 22:00
+                    p вс 11:00 - 22:00
+                p по вопросам наличия звонить +7 (965) 309 66 31
+            .shops__info-col
+                img(src="../image/shops-msk__img2.webp", alt="")
+        .shops__info.max-width1200px
+            .shops__info-col
+                .shops__info-title
+                   p ТРЦ "АФИМОЛЛ СИТИ"
+                    .shops__info-title-line
+                p м. Деловой Центр, Пресненская набережная, д. 2, 2 этаж, белая витрина в виде бриллианта около ZARA kids
+                .shops__info-col-row
+                    p пн-чт + вс 10:00 - 22:00
+                    p пт-сб 10:00 - 23:00
+                p по вопросам наличия звонить +7 (925) 928 2515
+            .shops__info-col
+                img(src="../image/shops-msk__img3.webp", alt="")
+
+        include ../blocks/mailing/mailing
+        include ../blocks/footer/footer  

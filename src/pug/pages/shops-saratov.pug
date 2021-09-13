@@ -1,0 +1,39 @@
+include ../blocks/mixins/mixins.pug
+doctype html
+html(lang="ru-RU")
+    include ../blocks/head/head.pug
+    body
+        include ../blocks/header/header
+        .shops__block
+            .shops__title
+                p Наши магазины
+            .shops__title-text
+                a(href="/shops-msk.html") Москва
+                a(href="/shops-spb.html") Санкт-Петербург
+                a(href="/shops-kaz.html") Казань
+                a(href="/shops-stav.html") Ставрополь
+                a(href="/shops-yuz-sah.html") Южно-Сахалинск
+                a(href="/shops-kras.html") Краснодар 
+                a(href="/shops-sochi.html") Сочи 
+                a(href="/shops-vladivostok.html") Владивосток
+                a(href="/shops-novosibirsk.html") Новосибирск 
+                a(href="/shops-perm.html") Пермь 
+                a(href="/shops-krasnoyarsk.html") Красноярск
+                a(href="/shops-omsk.html") Омск
+                a(href="/shops-saratov.html") Саратов
+                a(href="/shops-abakan.html") Абакан 
+                a(href="/shops-kyrgyzstan.html") Киргизия 
+                a(href="/shops-yakutsk.html") Якутск 
+        .shops__info.max-width1200px
+            .shops__info-col
+                .shops__info-title
+                   p Саратов
+                    .shops__info-title-line
+                p ул. Московская , 115 тц Мир, магазин MONOME
+                p По вопросам наличия звонить +7(905)384-52-51
+                .shops__info-col-row
+                    a(href="#") 
+                        include ../../static/image/Svg-Instagram.svg
+            .shops__info-col
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A07ae7dbdce32bfd571ebce746cb0ce7d16bc3b7e91a3ebd77a9c1ac16878d3ff&amp;width=100%&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+        include ../blocks/footer/footer  

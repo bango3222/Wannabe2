@@ -1,0 +1,15 @@
+include ../blocks/mixins/mixins.pug
+doctype html
+html(lang="ru-RU")
+    include ../blocks/head/head.pug
+    body
+        include ../blocks/header/header
+        .fav.side_padings
+            .fav-title
+                p Избранное
+            .block_with_cards-element
+                    include ../blocks/card/card
+                    include ../blocks/card/card
+                    include ../blocks/card/card
+                    include ../blocks/card/card
+        include ../blocks/footer/footer

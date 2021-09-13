@@ -1,0 +1,47 @@
+include ../blocks/mixins/mixins.pug
+doctype html
+html(lang="ru-RU")
+    include ../blocks/head/head.pug
+    body
+        include ../blocks/header/header
+        .reg-lk.max-width1200px
+            .reg-lk-wrapp
+                .reg-lk-title 
+                    p Регистрация
+                .input-info    
+                    p Имя
+                    .input-info__input
+                        input(type="text" name="name" placeholder="Введите имя")
+                .input-info     
+                    p Фамилия
+                    .input-info__input
+                        input(type="text" name="name" placeholder="Введите фамилию")
+                .input-info    
+                    p Телефон
+                    .input-info__input
+                        input(type="tel" id="phone" name="name" placeholder="+7")
+                .input-info    
+                    p E-mail
+                    .input-info__input
+                        input(type="email" name="name" placeholder="E-mail")
+                .input-info 
+                    p Пароль
+                    .input-info__input-password
+                        input(type="password" id="password-input" name="password" placeholder="Введите пароль")
+                        a(href="#").input-info__input-password-control
+                .input-info 
+                    p Повторите пароль
+                    .input-info__input-password
+                        input(type="password" id="password-input" name="password" placeholder="Введите пароль")
+                        a(href="#").input-info__input-password-control
+                .reg-lk-info-checkbox
+                        input(type="checkbox" id="1").reg-lk-checkbox
+                        label(for="1")  Согласен с правилами обработки персональных данных
+                //- .reg-lk-info-checkbox
+                //-         input(type="checkbox" id="2").reg-lk-checkbox
+                //-         label(for="2")  Подписаться на рассылку по почте 
+                .reg-lk-info-btn 
+                    a(href="/lk-info.html") Зарегистрироваться
+                .reg-lk-info-src
+                    a(href="/enter-lk.html") Войти в аккаунт 
+        include ../blocks/footer/footer

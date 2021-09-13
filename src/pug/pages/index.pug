@@ -1,0 +1,81 @@
+include ../blocks/mixins/mixins.pug
+doctype html
+html(lang="ru-RU")
+    include ../blocks/head/head.pug
+    body
+        include ../blocks/header/header
+        .index__block-info
+            a(href="#")
+                p БЕСПЛАТНАЯ ДОСТАВКА ПОЧТОЙ РОССИИ ПРИ ОПЛАТЕ ОНЛАЙН<br>СКИДКА 10% НА ПЕРВЫЙ ЗАКАЗ ЗА ПОДПИСКУ НА НОВОСТИ
+        .index__block-slider
+            .swiper-container.index__slider
+                .swiper-wrapper
+                    .swiper-slide.index__block-slider-img
+                        img(src="/image/index-slider_img1.webp", alt="img")
+                        .index__block-slider-img
+                        p.index__block-slider-text CHUMA VECHERINKA X WANNA?BE!
+                        a(href="#").index__block-slider-btn К КОЛЕКЦИИ
+                    .swiper-slide.index__block-slider-img
+                        img(src="/image/index-slider_img2.webp", alt="img")
+                        a(href="#").index__block-slider-btn К КОЛЕКЦИИ
+                        p.index__block-slider-text 
+                    .swiper-slide.index__block-slider-img
+                        img(src="/image/index-slider_img3.webp", alt="img")
+                        a(href="#").index__block-slider-btn К КОЛЕКЦИИ
+                        p.index__block-slider-text Жемчуг 
+                    .swiper-slide.index__block-slider-img
+                        img(src="/image/index-slider_img4.webp", alt="img")
+                        a(href="#").index__block-slider-btn К КОЛЕКЦИИ
+                        p.index__block-slider-text ЛУННАЯ ПРИЗМА 
+                    .swiper-slide.index__block-slider-img
+                        img(src="/image/index-slider_img5.webp", alt="img")
+                        a(href="#").index__block-slider-btn НАЧАТЬ ПОКУПКИ
+                        p.index__block-slider-text ПАРИЖ 
+                .swiper-pagination
+        .index__block-recommendations-img
+            .index__block-recommendations-imges
+                a(href="#")
+                    img(src="/image/index_img1.webp", alt="img")
+                    .index__block-recommendations-img-text
+                        p ШКАТУЛКИ
+                        p УСПЕЙТЕ ЗАКАЗАТЬ
+            .index__block-recommendations-imges
+                a(href="#")
+                    img(src="/image/index_img2.webp", alt="img")
+                    .index__block-recommendations-img-text
+                        p МНОГОСЛОЙНОСТЬ
+                        p БУДЬТЕ В ТРЕНДЕ
+        .index__block-recommendations.side_padings
+            .index__block-recommendations-title
+                p ПРИГОТОВЬТЕСЬ К ПОКУПКАМ
+                p Нам нравится помогать нашим клиентам быть в тренде. Поэтому мы сделали подборку наиболее актуальных украшений.
+            .block_with_cards-element
+                include ../blocks/card/card
+                include ../blocks/card/card
+                include ../blocks/card/card
+                include ../blocks/card/card
+                include ../blocks/card/card
+                include ../blocks/card/card
+            .index__block-recommendations-btn 
+                a(href="#") ВСЕ УКРАШЕНИЯ WANNA?BE!
+        .index__block-recommendations-img2
+            .index__block-recommendations-imges
+                a(href="#")
+                    img(src="/image/index_img2.webp", alt="img")
+                    .index__block-recommendations-img-text
+                        p БРАСЛЕТЫ-НИТИ
+                        p ВЫБЕРИТЕ СВОЙ СИМВОЛ
+            .index__block-recommendations-imges
+                a(href="#")
+                    img(src="/image/index_img2.webp", alt="img")
+                    .index__block-recommendations-img-text
+                        p @WANNABEJEWELRY
+                        p ПОДПИСЫВАЙТЕСЬ НА НАС
+            .index__block-recommendations-imges 
+                a(href="#")
+                    img(src="/image/index_img2.webp", alt="img")
+                    .index__block-recommendations-img-text
+                        p НАШИ МАГАЗИНЫ
+                        p НАЙДИТЕ УДОБНОЕ МЕСТО ДЛЯ ПОКУПОК
+        include ../blocks/mailing/mailing
+        include ../blocks/footer/footer

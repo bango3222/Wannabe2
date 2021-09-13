@@ -1,0 +1,63 @@
+@import "src/static/style/vars";
+.mailing {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 48px;
+}
+.mailing__title {
+  max-width: 570px;
+  font-weight: 350;
+  font-size: 48px;
+  line-height: 114%;
+  text-align: center;
+  letter-spacing: -0.015em;
+  margin-bottom: 40px;
+  @media (max-width: 450px) {
+    font-size: 32px;
+  }
+}
+.mailing__forma {
+  display: flex;
+  max-width: 570px;
+  justify-content: center;
+  width: 100%;
+  @media (max-width: 450px) {
+    flex-wrap: wrap;
+  }
+}
+
+.mailing__forma-input {
+  border-radius: 4px;
+  border: 1px solid #000000;
+  max-width: 360px;
+  width: 100%;
+  padding-left: 10px;
+  font-size: 16px;
+  height: 55px;
+  transition: 0.3s ease-in;
+}
+.mailing__forma-input:hover {
+  box-shadow: 0 0 1px 2px;
+}
+.mailing__forma-btn {
+  display: flex;
+  align-items: center;
+  max-width: 170px;
+  width: 100%;
+  justify-content: center;
+  border-radius: 4px;
+  background-color: $purple;
+  color: #ffffff;
+  margin-left: 24px;
+  transition: 0.3s ease-in;
+  @media (max-width: 450px) {
+    height: 55px;
+    max-width: 450px;
+    margin-top: 16px;
+    margin-left: 0;
+  }
+}
+.mailing__forma-btn:hover {
+  background-color: rgba(192, 180, 214, 0.78);
+}

@@ -1,0 +1,45 @@
+include ../blocks/mixins/mixins.pug
+doctype html
+html(lang="ru-RU")
+    include ../blocks/head/head.pug
+    body
+        include ../blocks/header/header
+        .contacts.max-width1200px
+            .contacts__title
+                p Наши контакты
+            .contacts__title-text
+                p Свяжитесь с нами, если у вас есть какой-либо вопрос по товарам или для сотрудничества
+            .contacts-wrapp
+                .contacts-wrapp-col 
+                    .contacts-wrapp-col-row  
+                        p По интернет-заказам:
+                        p.font-weight-normal +7 (968) 908 9998
+                        p Оператор работает по будням с 12:00 до 20:00
+                    .contacts-wrapp-col-row  
+                        p По вопросам сотрудничества и рекламы:
+                        p.font-weight-normal hello@wanna-be.ru
+                    .contacts-wrapp-col-row
+                        p По вопросам оптовых закупок:
+                        p.font-weight-normal opt@wanna-be.ru
+                    .contacts-wrapp-col-row
+                        p Найдите на нас в Instagram:
+                        p.font-weight-normal @wannabejewelry
+                    .contacts-wrapp-col-row
+                        a(href="#").footer__column1-social-element
+                            include ../../../src/static/image/Svg-Instagram.svg
+                .contacts-wrapp-col
+                    .input-info    
+                        p E-mail
+                        .input-info__input
+                            input(type="email" name="name" placeholder="E-mail")
+                    .input-info    
+                        p ФИО
+                        .input-info__input
+                            input(type="text" name="FIO" placeholder="Введите ФИО")
+                    .contacts-comment
+                        textarea(name="comment" cols="30" rows="5" placeholder="Комментарий" )
+                    .contacts__text-btn 
+                        a(href="#") Отправить
+                    
+        include ../blocks/mailing/mailing
+        include ../blocks/footer/footer  

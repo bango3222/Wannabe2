@@ -1,0 +1,63 @@
+include ../blocks/mixins/mixins.pug
+doctype html
+html(lang="ru-RU")
+    include ../blocks/head/head.pug
+    body
+        include ../blocks/header/header-basket
+        .basket.max-width1200px
+            .basket-info
+                .basket-title
+                    p Ваш заказ
+                .basket-product
+                    .basket-product-wrapp
+                        img(src="/image/card__img.png", alt="")
+                        .basket-product-info
+                            .basket-product-info-close
+                                include ../../static/image/Svg-close.svg
+                            .basket-product-info-title 
+                                p Пусеты Булавки без камней
+                    .basket-product-info-btn
+                        //- a(href="#")
+                        //-         include ../../static/image/Svg-trashcan.svg
+                        .btn__quantity
+                            <input class="quantity__btn quantity__btnmin" type="button" value="-">
+                            <input class="quantity__pole" type="number" readonly="readonly" name="quant__375" value="1">
+                            <input class="quantity__btn quantity__btnplas" type="button" value="+">
+                        p 3 900 р.
+                .basket-product
+                    .basket-product-wrapp
+                        img(src="/image/card__img.png", alt="")
+                        .basket-product-info
+                            .basket-product-info-close
+                                include ../../static/image/Svg-close.svg
+                            .basket-product-info-title 
+                                p Пусеты Булавки без камней
+                    .basket-product-info-btn
+                        //- a(href="#")
+                        //-         include ../../static/image/Svg-trashcan.svg
+                        .btn__quantity
+                            <input class="quantity__btn quantity__btnmin" type="button" value="-">
+                            <input class="quantity__pole" type="number" readonly="readonly" name="quant__375" value="1">
+                            <input class="quantity__btn quantity__btnplas" type="button" value="+">
+                        p 3 900 р.
+            .basket-price
+                .basket-price-border
+                    .basket-price-all
+                        .basket-price-name
+                            p Миникольцо Полоски с камнями
+                        .basket-price-name-price
+                            p 3 900 р.
+                    .basket-price-promo.align-center
+                        a(href="#").basket-price-promo-drop
+                            include ../../static/image/Svg-plas.svg
+                            P Ввести промокод
+                        .basket-price-promo-input.align-center.flex-row
+                            input(type="text" placeholder="Введите промокод")
+                            a(href="#") Применить
+                    .basket-price-result
+                        p Итоговая сумма:
+                        .basket-price-result-price
+                            p 11 700 р.
+                    .basket-price-btn 
+                        a(href="/basket-details.html") Оформить заказ
+        include ../blocks/footer/footer

@@ -1,0 +1,53 @@
+@import "src/static/style/vars";
+.gift-card {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  min-height: calc(100vh - 600px);
+}
+.gift-card__title {
+  max-width: 800px;
+  font-weight: 350;
+  font-size: 34px;
+  line-height: 50px;
+  letter-spacing: -0.005em;
+  margin-bottom: 32px;
+}
+.gift-card__text {
+  max-width: 800px;
+  font-weight: 300;
+  font-size: 20px;
+}
+.gift-card__text p {
+  margin-bottom: 24px;
+}
+.gift-card__text ol {
+  padding-left: 20px;
+}
+.gift-card__text li {
+  margin-bottom: 16px;
+}
+.gift-card__text-title {
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.gift-card-btn {
+}
+.gift-card-btn a {
+  background-color: $purple;
+  border-radius: 4px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 32px;
+  color: $white;
+  max-width: 300px;
+  font-size: 16px;
+}
+.gift-card-btn a:hover {
+  background-color: $hover;
+}
+#scr-gift-card:hover {
+  color: $hover;
+}

@@ -1,0 +1,89 @@
+@import "src/static/style/vars";
+
+.footer {
+  border-top: 1px solid #f2f2f2;
+}
+.footer__wrapper {
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+.footer__column1 {
+}
+.footer__column1-logo svg {
+  width: 80px;
+  height: 50px;
+  margin-bottom: 24px;
+}
+.footer__column1-social {
+  margin-bottom: 24px;
+}
+.footer__column1-social-element {
+  margin-right: 8px;
+}
+.footer__column1-social a {
+  transition: 0.3s ease-in;
+}
+.footer__column1-social-element svg path {
+  transition: 0.3s ease-in;
+}
+.footer__column1-social-element:hover svg path {
+  stroke: $purple;
+}
+
+.footer__column1-phone {
+  margin-bottom: 16px;
+}
+.footer__column1-phone p {
+  margin-bottom: 8px;
+}
+.footer__column1-phone a {
+  transition: 0.3s ease-in;
+}
+.footer__column1-phone a:hover {
+  color: $purple;
+}
+.footer__column2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer__column2-1 {
+  margin-right: 56px;
+  margin-bottom: 24px;
+}
+@media (max-width: 500px) {
+  .footer__column2-1 {
+    margin-right: 20px;
+  }
+}
+.footer__column2-1 p {
+  margin-bottom: 16px;
+}
+.footer__column2-1 a {
+  transition: 0.3s ease-in;
+}
+.footer__column2-1 a:hover {
+  color: $purple;
+}
+
+.footer__column2-1-element p {
+  margin-bottom: 8px;
+  font-weight: 350;
+  letter-spacing: 0.005em;
+}
+.footer__column2-2 {
+  margin-bottom: 24px;
+}
+.footer__column2-2 p {
+  margin-bottom: 16px;
+}
+.footer__column2-2-element p {
+  margin-bottom: 8px;
+  font-weight: 350;
+  letter-spacing: 0.005em;
+}
+.footer__column2-2 a {
+  transition: 0.3s ease-in;
+}
+.footer__column2-2 a:hover {
+  color: $purple;
+}

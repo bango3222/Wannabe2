@@ -1,0 +1,42 @@
+@import "src/static/style/vars";
+.payment-delivery {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  min-height: calc(100vh - 600px);
+}
+.payment-delivery__title {
+  max-width: 800px;
+  font-weight: 350;
+  font-size: 34px;
+  line-height: 50px;
+  letter-spacing: -0.005em;
+  margin-bottom: 32px;
+}
+.payment-delivery__text {
+  max-width: 800px;
+  font-weight: 300;
+  font-size: 20px;
+}
+.payment-delivery__text p {
+  margin-bottom: 16px;
+}
+
+.payment-delivery__text li {
+  margin-bottom: 16px;
+}
+.payment-delivery__text-title {
+  font-weight: 500;
+  margin-bottom: 24px;
+  margin-top: 48px;
+}
+.payment-delivery__text ul {
+  margin-bottom: 32px;
+  padding-left: 20px;
+}
+.payment-delivery__text a {
+  border-bottom: 1px solid $black;
+}
+.payment-delivery__text a:hover {
+  color: $hover;
+  border-bottom: 1px solid $hover;
+}

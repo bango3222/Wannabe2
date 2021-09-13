@@ -1,0 +1,30 @@
+@import "src/static/style/vars";
+.breadcrumbs {
+  display: flex;
+  margin-top: 48px;
+  margin-bottom: 32px;
+  @media (max-width: 816px) {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+}
+.breadcrumbs a {
+  transition: 0.3s ease-in;
+}
+.breadcrumbs a:hover {
+  color: $purple;
+}
+.breadcrumbs__link {
+  margin-right: 16px;
+  font-weight: 300;
+  line-height: 135%;
+  font-size: 14px;
+  @media (max-width: 816px) {
+    font-size: 12px;
+  }
+}
+.breadcrumbs__sep {
+  margin-right: 16px;
+}
+.breadcrumbs__link_current {
+}

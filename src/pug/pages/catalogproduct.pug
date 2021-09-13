@@ -1,0 +1,97 @@
+include ../blocks/mixins/mixins.pug
+doctype html
+html(lang="ru-RU")
+    include ../blocks/head/head.pug
+    body
+        include ../blocks/header/header
+        include ../blocks/breadcrumbs/breadcrumbs
+        .catalogproduct__wrapp.max-width1200px
+            .catalogproduct__block2-title.mobile
+                p Браслет Лунные фазы с камнями
+            .catalogproduct__block1
+                .catalogpr.catalogproduct__block1-slider.swiper-container
+                    .swiper-wrapper
+                        .swiper-slide.catalogproduct__block1-slider-img
+                            img(src="/image/card__img.png", alt="img")
+                        .swiper-slide.catalogproduct__block1-slider-img
+                            img(src="/image/card__img2.png", alt="img")
+                        .swiper-slide.catalogproduct__block1-slider-img
+                            img(src="/image/card__img2.png", alt="img")
+                        .swiper-slide.catalogproduct__block1-slider-img
+                            img(src="/image/card__img2.png", alt="img")
+                        .swiper-slide.catalogproduct__block1-slider-img
+                            img(src="/image/card__img2.png", alt="img")
+                    .swiper-pagination
+                .swiper-container.catalogproduct__block1-slider-mini 
+                    .swiper-wrapper.catalogproduct__block1-slider-mini-wrapper 
+                        .catalogproduct__block1-slider-mini-slide.swiper-slide
+                            .catalogproduct__block1-slider-mini-img
+                                img(src="/image/card__img.png", alt="img")
+                        .catalogproduct__block1-slider-mini-slide.swiper-slide
+                            .catalogproduct__block1-slider-mini-img
+                                img(src="/image/card__img2.png", alt="img")
+                        .catalogproduct__block1-slider-mini-slide.swiper-slide
+                            .catalogproduct__block1-slider-mini-img
+                                img(src="/image/card__img2.png", alt="img")
+                        .catalogproduct__block1-slider-mini-slide.swiper-slide
+                            .catalogproduct__block1-slider-mini-img
+                                img(src="/image/card__img2.png", alt="img")
+                        .catalogproduct__block1-slider-mini-slide.swiper-slide
+                            .catalogproduct__block1-slider-mini-img
+                                img(src="/image/card__img2.png", alt="img")
+                    .swiper-button-prev
+                    .swiper-button-next
+            .catalogproduct__block2 
+                .catalogproduct__block2-title 
+                    p Браслет Лунные фазы с камнями
+                .catalogproduct__block2-article
+                    p Артикул: B056-11
+                .catalogproduct__block2-price
+                    .catalogproduct__block2-price-tag
+                        p 4 900 ₽
+                    .catalogproduct__block2-price-none
+                        p Нет в наличии
+                .catalogproduct__block2-color
+                    +color-radio('#C0C0C0', '12', 'true')
+                    +color-radio('#FFE65E', '13')
+                    +color-radio('#FBD2FF', '14')
+                .catalogproduct__block2-select
+                    select(name="size" data-display="Размер")
+                        option(value="13мм") 13мм
+                        option(value="14мм") 14мм
+                        option(value="15мм") 15мм
+                        option(value="16мм") 16мм
+                .catalogproduct__block2-btn 
+                    a(href="#").catalogproduct__block2-btn-add Добавить&nbsp;в&nbsp;корзину
+                    a(href="#").catalogproduct__block2-btn-none Сообщить&nbsp;о&nbsp;поступлении
+                    a(href="#").catalogproduct__block2-btn-fav
+                        include ../../../src/static/image/Svg-Heart32.svg
+                .catalogproduct__block2-info
+                    a.catalogproduct__block2-info-element Описание
+                        include ../../../src/static/image/Svg-arrow.svg
+                    p.catalogproduct__block2-info-dropdown Доставка по Москве на следующий день, кроме воскресенья. Подробнее о сроках доставки.
+                    a.catalogproduct__block2-info-element Характеристики
+                        include ../../../src/static/image/Svg-arrow.svg
+                    p.catalogproduct__block2-info-dropdown Доставка по Москве на следующий день, кроме воскресенья. Подробнее о сроках доставки.
+                    a.catalogproduct__block2-info-element Доставка, Оплата, Возврат
+                        include ../../../src/static/image/Svg-arrow.svg
+                    p.catalogproduct__block2-info-dropdown Доставка по Москве на следующий день, кроме воскресенья. Подробнее о сроках доставки.
+
+        .catalogproduct__block-recommendations.side_padings
+            .catalogproduct__block-recommendations-title
+                p Сочетается с
+            .block_with_cards-element
+                    include ../blocks/card/card
+                    include ../blocks/card/card
+                    include ../blocks/card/card
+                    include ../blocks/card/card
+        .catalogproduct__block-recommendations.side_padings
+            .catalogproduct__block-recommendations-title
+                p Бестселлеры
+            .block_with_cards-element
+                    include ../blocks/card/card
+                    include ../blocks/card/card
+                    include ../blocks/card/card
+                    include ../blocks/card/card
+        include ../blocks/mailing/mailing
+        include ../blocks/footer/footer

@@ -1,0 +1,117 @@
+header
+    .header__line1.side_padings.flex-row.align-center.spc-btw
+        .header__mobile-menu
+            .header__mobile-menu-button
+                .mobile-button__line1
+                .mobile-button__line2
+                .mobile-button__line3
+            .header__mobile-menu-button-src
+                .header__mobile-menu-searchbar-back
+                .header__mobile-menu-searchbar
+                    form(action="#", method="get").align-center.flex-row
+                        a(href="#").header__line1-nav-search-btn
+                            include ../../../static/image/Svg-src.svg
+                        input(placeholder="Поиск" name="q" type="search").header__line1-nav-search-input
+
+
+                button(type="submit").header__mobile-menu-button-search
+                        include ../../../static/image/Svg-src.svg
+            .header__mobile-menu-wrap
+                .header__mobile-menu-close
+                    include ../../../../src/static/image/svg-close.svg
+                a(href='/').header__logo
+                    img(src="/image/Logo.png", alt="logo")
+                .header__info.flex-row
+                    a(href="#").header__info-element.flex-row.align-center
+                        include ../../../static/image/Svg-map.svg
+                        p Магазины
+                    a(href="tel: +7(968)9089998").header__info-element.flex-row.align-center
+                        include ../../../static/image/Svg-phon.svg
+                        p +7(968)9089998
+                .header__column
+                    .header__mobile-lk
+                        .header__row.mb-16px
+                            a(href='#').header__mobile-bonus
+                                include ../../../static/image/Svg-bonuses.svg
+                                p 580
+                        .header__row.justify-spc-btw.mb-16px
+                            a(href='#') Личные данные
+                            a(href='#') История заказов
+                        .header__row
+                            a(href='#') Выход
+                .header__column
+                    .header__nav-dropdown
+                        a(href="#").header__nav-element.flex-row.align-center
+                            p Коллекции
+                            include ../../../static/image/Svg-triangle.svg
+                        .header__nav-element-dropdown-content-wrap
+                            .header__nav-element-dropdown-content
+                                a(href="#") Лунныя призма
+                                a(href="#") Про любовь
+                                a(href="#") Унисекс
+                                a(href="#") Подарок&nbsp;до&nbsp;2000&nbsp;руб.
+                                a(href="#") Тяжелый люкс
+                                a(href="#") Париж
+                                a(href="#") Ностальгия
+                                a(href="#") Цепи и звенья
+                                a(href="#") Бестселлеры
+                    .header__nav-dropdown
+                        a(href="#").header__nav-element.flex-row.align-center
+                            p Коллекции
+                            include ../../../static/image/Svg-triangle.svg
+                        .header__nav-element-dropdown-content-wrap
+                            .header__nav-element-dropdown-content
+                                a(href="/catalog.html") Лунныя призма
+                                a(href="#") Про любовь
+                                a(href="#") Унисекс
+                                a(href="#") Подарок&nbsp;до&nbsp;2000&nbsp;руб.
+                                a(href="#") Тяжелый люкс
+                                a(href="#") Париж
+                                a(href="#") Ностальгия
+                                a(href="#") Цепи и звенья
+                                a(href="#") Бестселлеры
+        .header__line1-info.flex-row
+            a(href="/shops-msk.html").header__line1-info-element.flex-row.align-center
+                include ../../../static/image/Svg-map.svg
+                p Магазины
+            a(href="tel: +7(968)9089998").header__line1-info-element.flex-row.align-center
+                include ../../../static/image/Svg-phon.svg
+                p +7&nbsp;(968)&nbsp;908&nbsp;9998
+        a(href='/').header__line1-logo
+            include ../../../static/image/Logo.svg
+        .header__line1-nav.flex-row.spc-btw
+            .header__line1-nav-search
+                .align-center.flex-row
+                    a(href="#").header__line1-nav-search-btn
+                        include ../../../static/image/Svg-src.svg
+                    input(placeholder="Поиск" name="q" type="search").header__line1-nav-search-input
+            .header__line1-nav-icon.align-center.flex-row
+                a(href="/basket.html").header__line1-nav-icon-element.align-center.flex-row
+                    include ../../../static/image/Svg-shoppingBag.svg
+                a(href="/fav.html").header__line1-nav-icon-element.align-center.flex-row
+                    include ../../../static/image/Svg-heart.svg
+                a(href="/reg-lk.html").header__line1-nav-icon-element.align-center.flex-row
+                    include ../../../static/image/Svg-IdentificationCart.svg
+    .header__navs.side_padings
+        .header__navs-mark
+        each header in ['Коллекции','Кольца','Браслеты','Браслеты - нити','Серьги','Каффы','Пирсинг','На шею','Распродажа','Не украшения']
+            .header__nav
+                a(href ='#' slider-img='image/about__img2.jpg').header__nav-title= header
+                .header__nav-dropdown.side_padings
+                    .header__categories
+                        each cat in ['Категория 1', 'Категория 2', 'Категория 3', 'Категория 4']
+                            .header__cat
+                                a(href='#' slider-img='image/card__img2.png').header__cat-header= cat+header
+                                .header__subcat-list
+                                    a(href='#' slider-img='image/card__img.png').header__subcat Карьера/Деньги, Профессии
+                                    a(href='#' slider-img='image/about__img3.jpg').header__subcat Карьера/Деньги, Профессии
+
+                    .header__cat-images
+                        img(alt="фото")
+    .header__line3.align-center.flex-center
+        a(href="/lk-info-without-editing.html") Личные данные 
+        a(href="/lk-history.html") История заказов
+        a(href="#") Выход
+        .header__line3-bonuses
+            include ../../../static/image/Svg-bonuses.svg
+            p 580

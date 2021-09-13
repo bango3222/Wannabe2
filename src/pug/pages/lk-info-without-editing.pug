@@ -1,0 +1,97 @@
+include ../blocks/mixins/mixins.pug
+doctype html
+html(lang="ru-RU")
+    include ../blocks/head/head.pug
+    body
+        include ../blocks/header/header
+        .lk-info.max-width1200px
+            .lk-info-center
+                .lk-info-wrapp
+                    .lk-info-title 
+                            p Личные данные
+                    .lk-info-row
+                        .lk-info-col
+                            .entered-information
+                                .entered-information-title
+                                    p Имя
+                                .entered-information-main 
+                                    p Иван
+                            .entered-information
+                                .entered-information-title
+                                    p Телефон
+                                .entered-information-main 
+                                    p +7 (988) 983 32 32
+                            .entered-information
+                                .entered-information-title
+                                    p Пароль
+                                .entered-information-main 
+                                    p ●●●●●●●●
+                        .lk-info-col
+                            .entered-information
+                                .entered-information-title
+                                    p Фамилия
+                                .entered-information-main 
+                                    p Иванов
+                            .entered-information
+                                .entered-information-title
+                                    p E-mail
+                                .entered-information-main 
+                                    p ivanov@mail.ru
+                            .entered-information
+                                .entered-information-title
+                                    p Дата рождения
+                                .entered-information-main 
+                                    p 04 Dec 2020
+                .lk-info-wrapp
+                    .lk-info-title 
+                            p Адрес доставки
+                    .lk-info-row
+                        .lk-info-col
+                            .entered-information
+                                .entered-information-title
+                                    p Страна
+                                .entered-information-main 
+                                    p Российская Федерация
+                            .entered-information
+                                .entered-information-title
+                                    p Город
+                                .entered-information-main 
+                                    p Москва
+                            .lk-info-col-wrapp
+                                .lk-info-col-wrapp-col
+                                    .entered-information
+                                        .entered-information-title
+                                            p Дом
+                                        .entered-information-main 
+                                            p Дом 66
+                                .lk-info-col-wrapp-col
+                                    .entered-information
+                                        .entered-information-title
+                                            p Квартира
+                                        .entered-information-main 
+                                            p Кв 66
+                        .lk-info-col
+                            .entered-information
+                                .entered-information-title
+                                    p Регион
+                                .entered-information-main 
+                                    p Волгоградская область
+                            .entered-information
+                                .entered-information-title
+                                    p Улица
+                                .entered-information-main 
+                                    p Ул.Дружбы
+                            .entered-information
+                                .entered-information-title
+                                    p Почтовый индекс
+                                .entered-information-main 
+                                    p 425254
+                .reg-lk-info-checkbox
+                        //- input(type="checkbox" id="1").reg-lk-checkbox
+                        //- label(for="1") Подписаться на рассылку по почте 
+                .lk-info-without-editing-btn
+                    //- .lk-info-btn-src
+                    //-     a(href="#") Удалить профиль 
+                    .lk-info-btn-main
+                        a(href="/lk-info.html") Редактировать 
+        include ../blocks/footer/footer

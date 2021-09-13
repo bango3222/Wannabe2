@@ -1,0 +1,39 @@
+@import "src/static/style/vars";
+
+.color-radio{
+  display: none;
+}
+
+.color-radio:checked + .color-radio-back{
+  border: 4px solid white;
+}
+.color-radio:checked ~ .color-radio-dot{
+  border: 1px solid black;
+}
+
+.color-radio-back{
+  height: 22px;
+  width: 22px;
+  border-radius: 100%;
+  border: 4px solid transparent;
+  transition: .3s;
+  cursor: pointer;
+
+}
+
+.color-radio-label{
+  margin-right: 4px;
+  position: relative;
+}
+
+.color-radio-dot{
+  height: 28px;
+  width: 28px;
+  border-radius: 100%;
+  border: 1px solid transparent;
+  transition: .3s;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
