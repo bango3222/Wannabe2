@@ -5,85 +5,25 @@ html(lang="ru-RU")
     body
         include ../blocks/header/header
         include ../blocks/breadcrumbs/breadcrumbs
-        .catalog.side_padings
-            .catalog__sort-modal
-                .catalog__modal-header
-                    .catalog__modal-close-btn
-                        include ../../static/image/Svg-arrow.svg
-                    .catalog__modal-logo
-                        img(src="/image/Logo.png", alt="logo")
-                    a.catalog__modal-reset-btn Очистить
-                .catalog__modal-options
-                    h3.catalog__modal-options-header Сортировка
-                    .catalog__modal-options-list
-                        .radio
-                            input(type="radio" value="free" name="sort" id="free" checked=true).radio_input
-                            label(for="free") По популярности
-                        .radio
-                            input(type="radio" value="free" name="sort" id="free1" checked=true).radio_input
-                            label(for="free1") По цене
-                a(href='#').catalog__modal-confirm-btn Показать
-            .catalog__filter-modal
-                .catalog__modal-header
-                    .catalog__modal-close-btn
-                        include ../../static/image/Svg-arrow.svg
-                    .catalog__modal-logo
-                        img(src="/image/Logo.png", alt="logo")
-                    a.catalog__modal-reset-btn Очистить
-                .catalog__modal-options
-                    h3.catalog__modal-options-header Фильтр
-                    .catalog__modal-options-list
-                        .catalog__modal-option-group-title
-                            p Коллекция
-                            include ../../static/image/Svg-arrow.svg
-                        .catalog__modal-option-group-dropdown
-                            .radio
-                                input(type="radio" value="col" name="col1" id="col1" ).radio_input
-                                label(for="col1") Jinx
-                            .radio
-                                input(type="radio" value="col" name="col1" id="col2" ).radio_input
-                                label(for="col2") Yoga / wine
-                        .catalog__modal-option-group-title
-                            p Коллекция
-                            include ../../static/image/Svg-arrow.svg
-                        .catalog__modal-option-group-dropdown
-                            .radio
-                                input(type="radio" value="col2" name="col2" id="col3" ).radio_input
-                                label(for="col3") Jinx
-                            .radio
-                                input(type="radio" value="col2" name="col2" id="col4" ).radio_input
-                                label(for="col4") Yoga / wine
+        include ../blocks/filter/filter
 
-                a(href='#').catalog__modal-confirm-btn Показать
+
+        .catalog.side_padings
             .catalog__mobile-buttons
                 a.catalog__mobile-btn.catalog__mobile-sort Сортировать
                 a.catalog__mobile-btn.catalog__mobile-filter Фильтры
             .catalog__line.flex-row.align-center.spc-btw
-
                 .catalog__line-title
                     p Браслеты
                 .catalog__line-filter
-                    select.catalog__line-filter-btn
-                        option(data-display="Камни")
-                        option(value="1") С камнями
-                        option(value="2") Без камней
-                    select.catalog__line-filter-btn
-                        option(data-display="Сортировать")
-                        option(value="1") по цене
-                        option(value="2") популярности
-                        option(value="3") новинки
-                    select.catalog__line-filter-btn
-                        option(data-display="Коллекция")
-                        option(value="1") Jinx
-                        option(value="2") Yoga / wine
-                    select.catalog__line-filter-btn
-                        option(data-display="Размер")
-                        option(value="1") 13мм
-                        option(value="2") 14мм
-                    select.catalog__line-filter-btn
-                        option(data-display="Цвет")
-                        option(value="1") Розовый
-                        option(value="2") Золото
+                    .catalog__line-filter-btn.open-filter.no-padding
+                        p Фильтры
+                        include ../../static/image/filter.svg
+
+                    select.catalog__line-filter-btn.right
+                        option(data-display="Сортировать" value='1') По цене
+                        option(value="2") По популярности
+
 
             .block_with_cards-element
                 include ../blocks/card/card

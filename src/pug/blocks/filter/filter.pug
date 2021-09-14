@@ -1,0 +1,102 @@
+include ../mixins/mixins
+
+.filter-wrap.side_padings
+    h3 Фильтр
+    .filter-close
+        include ../../../static/image/Svg-close.svg
+
+    .filter-clear
+        p Очистить фильтр
+    .filter-range
+        .filter-range__navs
+            .filter-range__nav
+                p От
+                input(type='text' value='0').filter-min-range
+            .filter-range__nav
+                p До
+                input(type='text' value='1000').filter-max-range
+
+
+        input(type='text'
+            class="filter-range-slider"
+            name="my_range"
+            value=""
+            data-type="double"
+            data-min="0"
+            data-max="1000")
+    .filter_grid
+        //Категории
+        .filter_col
+            h4 ТИП ИЗДЕЛИЯ
+            .filter_option-list
+                h3 Браслеты-нити
+
+                input(id='cat1' type='checkbox' name='type')
+                label(for='cat1')
+                    p Слова
+
+                input(id='cat2' type='checkbox' name='type')
+                label(for='cat2')
+                    p Любовь/Отношения
+            .filter_option-list
+                h3 Браслеты-нити
+
+                input(id='cat3' type='checkbox' name='type')
+                label(for='cat3')
+                    p Слова
+
+                input(id='cat4' type='checkbox' name='type')
+                label(for='cat4')
+                    p Любовь/Отношения
+
+
+        //Цвет
+        .filter_col
+            h4 Цвет покрытия
+            .filter_option-list
+                input(id='color1' type='checkbox' name='color')
+                label(for='color1')
+                    div(style='background: #ffccff;').filter_color-box
+                    p Родий
+
+                input(id='color2' type='checkbox' name='color')
+                label(for='color2')
+                    div(style='background: gold;').filter_color-box
+                    p Золото
+
+        //Размер
+        .filter_col
+            h4 Размер
+            .filter_option-list
+                input(id='size1' type='checkbox' name='size')
+                label(for='size1')
+                    p 14
+
+                input(id='size2' type='checkbox' name='size')
+                label(for='size2')
+                    p 15
+
+        //Вставки
+        .filter_col
+            h4 Вставки
+            .filter_option-list
+                input(id='aaa1' type='checkbox' name='aaa')
+                label(for='aaa1')
+                    p Цирконий
+
+                input(id='aaa2' type='checkbox' name='aaa')
+                label(for='aaa2')
+                    p Лунный камень
+
+        //Цвет вставки
+        .filter_col
+            h4 Цвет вставки
+            .filter_option-list
+                input(id='bbb1' type='checkbox' name='bbb')
+                label(for='bbb1')
+                    p Цирконий
+
+                input(id='bbb2' type='checkbox' name='bbb')
+                label(for='bbb2')
+                    p Лунный камень
+

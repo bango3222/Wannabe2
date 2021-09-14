@@ -25,8 +25,13 @@
   padding: 8px 30px 8px 16px;
   border-radius: 4px;
   margin-right: 8px;
+  cursor: pointer;
   @media (max-width: 873px) {
     margin-bottom: 8px;
+  }
+
+  &.no-padding{
+    padding-right: 16px;
   }
 }
 .catalog__line-filter :nth-child(5) {
@@ -152,3 +157,4 @@
   margin-bottom: 16px;
   display: none;
 }
+

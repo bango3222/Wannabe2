@@ -1,5 +1,7 @@
-mixin color-radio(color, value, checked)
+mixin color-radio(color, value, text, checked)
     label.color-radio-label
         input(type='radio' name='color' value=value checked=checked).color-radio
         div(style='background:'+color).color-radio-back
         div.color-radio-dot
+        p= text
+

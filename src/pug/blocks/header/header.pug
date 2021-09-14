@@ -41,7 +41,7 @@ header
                             a(href='#') Выход
                 .header__column
                     .header__nav-dropdown
-                        a(href="#").header__nav-element.flex-row.align-center
+                        a(href="/catalog.html").header__nav-element.flex-row.align-center
                             p Коллекции
                             include ../../../static/image/Svg-triangle.svg
                         .header__nav-element-dropdown-content-wrap
@@ -96,7 +96,7 @@ header
         .header__navs-mark
         each header in ['Коллекции','Кольца','Браслеты','Браслеты - нити','Серьги','Каффы','Пирсинг','На шею','Распродажа','Не украшения']
             .header__nav
-                a(href ='#' slider-img='image/about__img2.jpg').header__nav-title= header
+                a(href ='/catalog.html' slider-img='image/about__img2.jpg').header__nav-title= header
                 .header__nav-dropdown.side_padings
                     .header__categories
                         each cat in ['Категория 1', 'Категория 2', 'Категория 3', 'Категория 4']
