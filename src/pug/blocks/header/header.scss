@@ -3,13 +3,38 @@
 header {
   position: sticky;
   top: 0;
-  z-index: 1000;
+  z-index: 10000;
   background-color: $white;
 }
 
+.header__logo {
+  svg{
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+  }
+
+
+  transition: .3s;
+  margin-left: 16px;
+  margin-top: 10px;
+  height: 100%;
+  width: 100%;
+
+  &.moved{
+    margin-left: calc(50% - 20px);
+  }
+}
+
 .header__line1 {
-  padding-bottom: 24px;
-  padding-top: 24px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 816px) {
+    height: 60px;
+
+  }
 }
 
 .header__line1-info {
@@ -137,7 +162,8 @@ header {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #f2f2f2;
-    padding-bottom: 24px;
+
+    align-items: center;
   }
 }
 
@@ -197,7 +223,10 @@ header {
   top: 0;
   right: 0;
   bottom: 0;
-  padding: 24px 15px;
+
+
+
+
 
   &.active {
     transform: none;
@@ -235,8 +264,10 @@ header {
 
 .header__info-element p {
   margin-left: 8px;
-  font-weight: 350;
+  font-weight: 500;
   letter-spacing: 0.005em;
+
+
 }
 
 .header__mobile-menu .header__nav-dropdown {
@@ -253,7 +284,7 @@ header {
 }
 
 .header__nav-element-dropdown-content-wrap {
-  display: none;
+
   margin-top: 16px;
 }
 
@@ -500,3 +531,87 @@ header {
     }
   }
 }
+
+.header__mobile-menu-back{
+  position: absolute;
+  transform: rotate(90deg);
+  transition: .3s;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 10px;
+  left: -50px;
+  opacity: 0;
+
+  &.moved{
+    left: 10px;
+    opacity: 1;
+  }
+
+}
+
+.header__mobile-menu-paddings{
+
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  transition: .3s;
+
+
+  .header__mobile-menu-container{
+    height: 100%;
+    width: 100%;
+    padding: 24px 15px;
+    box-sizing: border-box;
+  }
+
+
+
+  .header__mobile-menu-inner{
+    height: 100%;
+    width: 100%;
+
+    box-sizing: border-box;
+    transition: .3s;
+
+    .header__nav-dropdown{
+      .header__mobile-menu-section{
+        margin-bottom: 16px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        svg{
+          transform: rotate(-90deg);
+        }
+
+        .header__mobile-menu-cats{
+          display: none;
+          flex-direction: column;
+          width: 100%;
+          padding: 24px 15px;
+          box-sizing: border-box;
+          transition: .3s;
+
+          .header__mobile-menu-cat{
+            margin-bottom: 16px;
+          }
+
+          .header__mobile-menu-subcats{
+            display: none;
+            flex-direction: column;
+            padding: 24px 15px;
+            width: 100%;
+            box-sizing: border-box;
+          }
+        }
+      }
+    }
+  }
+}
+
+

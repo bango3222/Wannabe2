@@ -16,60 +16,108 @@ header
 
                 button(type="submit").header__mobile-menu-button-search
                         include ../../../static/image/Svg-src.svg
+
             .header__mobile-menu-wrap
                 .header__mobile-menu-close
                     include ../../../../src/static/image/svg-close.svg
                 a(href='/').header__logo
-                    img(src="/image/Logo.png", alt="logo")
-                .header__info.flex-row
-                    a(href="#").header__info-element.flex-row.align-center
-                        include ../../../static/image/Svg-map.svg
-                        p Магазины
-                    a(href="tel: +7(968)9089998").header__info-element.flex-row.align-center
-                        include ../../../static/image/Svg-phon.svg
-                        p +7(968)9089998
-                .header__column
-                    .header__mobile-lk
-                        .header__row.mb-16px
-                            a(href='#').header__mobile-bonus
-                                include ../../../static/image/Svg-bonuses.svg
-                                p 580
-                        .header__row.justify-spc-btw.mb-16px
-                            a(href='#') Личные данные
-                            a(href='#') История заказов
-                        .header__row
-                            a(href='#') Выход
-                .header__column
-                    .header__nav-dropdown
-                        a(href="/catalog.html").header__nav-element.flex-row.align-center
-                            p Коллекции
-                            include ../../../static/image/Svg-triangle.svg
-                        .header__nav-element-dropdown-content-wrap
-                            .header__nav-element-dropdown-content
-                                a(href="#") Лунныя призма
-                                a(href="#") Про любовь
-                                a(href="#") Унисекс
-                                a(href="#") Подарок&nbsp;до&nbsp;2000&nbsp;руб.
-                                a(href="#") Тяжелый люкс
-                                a(href="#") Париж
-                                a(href="#") Ностальгия
-                                a(href="#") Цепи и звенья
-                                a(href="#") Бестселлеры
-                    .header__nav-dropdown
-                        a(href="#").header__nav-element.flex-row.align-center
-                            p Коллекции
-                            include ../../../static/image/Svg-triangle.svg
-                        .header__nav-element-dropdown-content-wrap
-                            .header__nav-element-dropdown-content
-                                a(href="/catalog.html") Лунныя призма
-                                a(href="#") Про любовь
-                                a(href="#") Унисекс
-                                a(href="#") Подарок&nbsp;до&nbsp;2000&nbsp;руб.
-                                a(href="#") Тяжелый люкс
-                                a(href="#") Париж
-                                a(href="#") Ностальгия
-                                a(href="#") Цепи и звенья
-                                a(href="#") Бестселлеры
+                    include ../../../../src/static/image/Logo.svg
+                .header__mobile-menu-back
+                    include ../../../../src/static/image/Svg-arrow.svg
+                .header__mobile-menu-paddings
+                    .header__mobile-menu-container
+                        .header__mobile-menu-inner
+
+                            .header__info.flex-row
+                                a(href="#").header__info-element.flex-row.align-center
+                                    include ../../../static/image/Svg-map.svg
+                                    p Магазины
+                                a(href="tel: +7(968)9089998").header__info-element.flex-row.align-center
+                                    include ../../../static/image/Svg-phon.svg
+                                    p +7(968)9089998
+                            .header__column
+                                .header__mobile-lk
+                                    .header__row.mb-16px
+                                        a(href='#').header__mobile-bonus
+                                            include ../../../static/image/Svg-bonuses.svg
+                                            p 580
+                                    .header__row.justify-spc-btw.mb-16px
+                                        a(href='#') Личные данные
+                                        a(href='#') История заказов
+                                    .header__row
+                                        a(href='#') Выход
+                            .header__column
+                                .header__nav-dropdown
+                                    .header__mobile-menu-section.flex-row.align-center
+                                        h4 Коллекции
+                                        include ../../../static/image/Svg-arrow.svg
+                                        .header__mobile-menu-cats
+                                            .header__mobile-menu-cat
+                                                h4 Лунныя призма 1
+                                                .header__mobile-menu-subcats
+                                                    a(href='#').header__mobile-menu-subcat Лунныя призма 1
+                                                    a(href='#').header__mobile-menu-subcat Про любовь
+                                                    a(href='#').header__mobile-menu-subcat Унисекс
+                                                    a(href='#').header__mobile-menu-subcat Подарок&nbsp;до&nbsp;2000&nbsp;руб.
+                                                    a(href='#').header__mobile-menu-subcat Тяжелый люкс
+                                                    a(href='#').header__mobile-menu-subcat Париж
+                                                    a(href='#').header__mobile-menu-subcat Ностальгия
+                                                    a(href='#').header__mobile-menu-subcat Цепи и звенья
+                                                    a(href='#').header__mobile-menu-subcat Бестселлеры
+                                            .header__mobile-menu-cat
+                                                h4 Про любовь 1
+                                                .header__mobile-menu-subcats
+                                                    a(href='#').header__mobile-menu-subcat Лунныя призма 2
+                                                    a(href='#').header__mobile-menu-subcat Про любовь
+                                                    a(href='#').header__mobile-menu-subcat Унисекс
+                                                    a(href='#').header__mobile-menu-subcat Подарок&nbsp;до&nbsp;2000&nbsp;руб.
+                                                    a(href='#').header__mobile-menu-subcat Тяжелый люкс
+                                                    a(href='#').header__mobile-menu-subcat Париж
+                                                    a(href='#').header__mobile-menu-subcat Ностальгия
+                                                    a(href='#').header__mobile-menu-subcat Цепи и звенья
+                                                    a(href='#').header__mobile-menu-subcat Бестселлеры
+
+
+
+
+
+
+
+                                    .header__mobile-menu-section.flex-row.align-center
+                                        h4 Аксессуары
+                                        include ../../../static/image/Svg-arrow.svg
+                                        .header__mobile-menu-cats
+                                            .header__mobile-menu-cat
+                                                h4 Лунныя призма 2
+                                                .header__mobile-menu-subcats
+                                                    a(href='#').header__mobile-menu-subcat Лунныя призма 3
+                                                    a(href='#').header__mobile-menu-subcat Про любовь
+                                                    a(href='#').header__mobile-menu-subcat Унисекс
+                                                    a(href='#').header__mobile-menu-subcat Подарок&nbsp;до&nbsp;2000&nbsp;руб.
+                                                    a(href='#').header__mobile-menu-subcat Тяжелый люкс
+                                                    a(href='#').header__mobile-menu-subcat Париж
+                                                    a(href='#').header__mobile-menu-subcat Ностальгия
+                                                    a(href='#').header__mobile-menu-subcat Цепи и звенья
+                                                    a(href='#').header__mobile-menu-subcat Бестселлеры
+                                            .header__mobile-menu-cat
+                                                h4 Про любовь 2
+                                                .header__mobile-menu-subcats
+                                                    a(href='#').header__mobile-menu-subcat Лунныя призма 4
+                                                    a(href='#').header__mobile-menu-subcat Про любовь
+                                                    a(href='#').header__mobile-menu-subcat Унисекс
+                                                    a(href='#').header__mobile-menu-subcat Подарок&nbsp;до&nbsp;2000&nbsp;руб.
+                                                    a(href='#').header__mobile-menu-subcat Тяжелый люкс
+                                                    a(href='#').header__mobile-menu-subcat Париж
+                                                    a(href='#').header__mobile-menu-subcat Ностальгия
+                                                    a(href='#').header__mobile-menu-subcat Цепи и звенья
+                                                    a(href='#').header__mobile-menu-subcat Бестселлеры
+
+
+
+
+
+
+
         .header__line1-info.flex-row
             a(href="/shops-msk.html").header__line1-info-element.flex-row.align-center
                 include ../../../static/image/Svg-map.svg
