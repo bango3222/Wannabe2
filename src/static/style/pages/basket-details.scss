@@ -301,3 +301,16 @@
 .basket-details-back a:hover svg path {
   stroke: $hover;
 }
+
+.basket-details-wrapp-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 30px;
+  width: 100%;
+
+  @media (max-width: 816px) {
+    grid-template-columns: 1fr;
+    margin-bottom: 16px;
+
+  }
+}

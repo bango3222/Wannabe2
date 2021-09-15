@@ -10,16 +10,30 @@ html(lang="ru-RU")
                     .lk-info-title 
                             p Личные данные
                     .lk-info-row
-                        .lk-info-col
+                        .basket-details-wrapp-grid
                             .input-info    
                                 p Имя
                                 .input-info__input
                                     input(type="text" name="name" placeholder="Введите имя")
+                            .input-info
+                                p Фамилия
+                                .input-info__input
+                                    input(type="text" name="name" placeholder="Введите фамилию")
                             .input-info    
                                 p Телефон
                                 .input-info__input
                                     input(type="tel" id="phone" name="name" placeholder="+7")
-                            .input-info 
+                            .input-info
+                                p E-mail
+                                .input-info__input
+                                    input(type="email" name="name" placeholder="E-mail")
+                            .input-info
+                                p Дата рождения
+                                .input-info__input
+                                    input(type="date" name="name" placeholder="E-mail")
+
+                        .basket-details-wrapp-grid
+                            .input-info
                                 p Пароль
                                 .input-info__input-password
                                     input(type="password" id="password-input" name="password" placeholder="Введите пароль")
@@ -35,24 +49,11 @@ html(lang="ru-RU")
                                     .input-info__input-password
                                         input(type="password" id="password-input" name="password" placeholder="Введите пароль")
                                         a(href="#").input-info__input-password-control
-                        .lk-info-col
-                            .input-info 
-                                p Фамилия
-                                .input-info__input
-                                    input(type="text" name="name" placeholder="Введите фамилию")
-                            .input-info    
-                                p E-mail
-                                .input-info__input
-                                    input(type="email" name="name" placeholder="E-mail")
-                            .input-info    
-                                p Дата рождения
-                                .input-info__input
-                                    input(type="date" name="name" placeholder="E-mail")
                 .lk-info-wrapp
                     .lk-info-title 
                             p Адрес доставки
                     .lk-info-row
-                        .lk-info-col
+                        .basket-details-wrapp-grid
                             .input-info-select     
                                 p Страна
                                     select(name="country" ).input-info-select-btn
@@ -61,12 +62,22 @@ html(lang="ru-RU")
                                         option(value="Российская Федерация") Российская Федерация
                                         option(value="Российская Федерация") Российская Федерация
                                         option(value="Российская Федерация") Российская Федерация
+                            .input-info-select
+                                p Регион
+                                    select(name="region" ).input-info-select-btn
+                                        option(value="Российская Федерация") Волгоградская область
+                                        option(value="Российская Федерация") Волгоградская область
+                                        option(value="Российская Федерация") Волгоградская область
                             .input-info-select      
                                 p Город
                                     select(name="city" ).input-info-select-btn
                                         option(value="Российская Федерация") Волгоград
                                         option(value="Российская Федерация") Волгоград
                                         option(value="Российская Федерация") Волгоград
+                            .input-info
+                                p Улица
+                                .input-info__input
+                                    input(type="text" name="name" placeholder="Ваша улица")
                             .lk-info-col-wrapp
                                 .lk-info-col-wrapp-col
                                     .input-info    
@@ -78,21 +89,14 @@ html(lang="ru-RU")
                                         p Квартира
                                         .input-info__input
                                             input(type="text" name="name" placeholder="Введите номер квартиры")
-                        .lk-info-col
-                            .input-info-select   
-                                p Регион
-                                    select(name="region" ).input-info-select-btn
-                                        option(value="Российская Федерация") Волгоградская область
-                                        option(value="Российская Федерация") Волгоградская область
-                                        option(value="Российская Федерация") Волгоградская область
-                            .input-info    
-                                p Улица
-                                .input-info__input
-                                    input(type="text" name="name" placeholder="Ваша улица")
-                            .input-info 
+                            .input-info
                                 p Почтовый индекс
                                 .input-info__input
                                     input(type="text" name="name" placeholder="Ваш почтовый индекс")
+
+
+
+                            
                 //- .reg-lk-info-checkbox
                 //-         input(type="checkbox" id="1").reg-lk-checkbox
                 //-         label(for="1") Подписаться на рассылку по почте 

@@ -16,7 +16,7 @@ html(lang="ru-RU")
                         p Способ доставки
                     div
                         .basket-details-wrapp-col
-                            .basket-details-col
+                            .basket-details-wrapp-grid
                                 .input-info-select
                                     p Страна
                                         select(name="country" ).input-info-select-btn
@@ -26,11 +26,21 @@ html(lang="ru-RU")
                                             option(value="Российская Федерация") Российская Федерация
                                             option(value="Российская Федерация") Российская Федерация
                                 .input-info-select
+                                    p Регион
+                                        select(name="region" ).input-info-select-btn
+                                            option(value="Российская Федерация") Волгоградская область
+                                            option(value="Российская Федерация") Волгоградская область
+                                            option(value="Российская Федерация") Волгоградская область
+                                .input-info-select
                                     p Город
                                         select(name="city" ).input-info-select-btn
                                             option(value="Российская Федерация") Волгоград
                                             option(value="Российская Федерация") Волгоград
                                             option(value="Российская Федерация") Волгоград
+                                .input-info
+                                    p Улица
+                                    .input-info__input
+                                        input(type="text" name="name" placeholder="Ваша улица")
                                 .basket-details-col-number-home
                                     .basket-details-col-number-row
                                         .input-info
@@ -42,21 +52,11 @@ html(lang="ru-RU")
                                             p Квартира
                                             .input-info__input
                                                 input(type="text" name="name" placeholder="Введите номер квартиры")
-                            .basket-details-col
-                                .input-info-select
-                                    p Регион
-                                        select(name="region" ).input-info-select-btn
-                                            option(value="Российская Федерация") Волгоградская область
-                                            option(value="Российская Федерация") Волгоградская область
-                                            option(value="Российская Федерация") Волгоградская область
-                                .input-info
-                                    p Улица
-                                    .input-info__input
-                                        input(type="text" name="name" placeholder="Ваша улица")
                                 .input-info
                                     p Почтовый индекс
                                     .input-info__input
                                         input(type="text" name="name" placeholder="Ваш почтовый индекс")
+
                         .basket-details-delivery
                             p Выберите способ доставки
                             .basket-details-delivery-radio
@@ -76,24 +76,25 @@ html(lang="ru-RU")
 
                     div
                         .basket-details-wrapp-col
-                            .basket-details-col
+                            .basket-details-wrapp-grid
                                 .input-info
                                     p Имя
                                     .input-info__input
                                         input(type="text" name="name" placeholder="Введите имя")
                                 .input-info
-                                    p Телефон
-                                    .input-info__input
-                                        input(type="tel" id="phone" name="name" placeholder="+7")
-                            .basket-details-col
-                                .input-info
                                     p Фамилия
                                     .input-info__input
                                         input(type="text" name="name" placeholder="Введите фамилию")
                                 .input-info
+                                    p Телефон
+                                    .input-info__input
+                                        input(type="tel" id="phone" name="name" placeholder="+7")
+                                .input-info
                                     p E-mail
                                     .input-info__input
                                         input(type="email" name="name" placeholder="E-mail")
+
+
                         .basket-details-wrapp-col
                             .basket-details-col
                                 .basket-details-communication
@@ -104,9 +105,9 @@ html(lang="ru-RU")
                                                 option(value="Российская Федерация") Звонок
                                                 option(value="Российская Федерация") Звонок
                                                 option(value="Российская Федерация") Звонок
-                            .basket-details-col
-                                .basket-details-comment
-                                    textarea(name="comment" cols="30" rows="5" placeholder="Комментарий" )
+                                    .basket-details-comment
+                                        textarea(name="comment" cols="30" rows="5" placeholder="Комментарий" )
+
                 .basket-details-info-row
                     .basket-details-wrapp
                         include ../../static/image/Svg-3.svg
