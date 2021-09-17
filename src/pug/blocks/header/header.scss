@@ -67,8 +67,6 @@ header {
 }
 
 .header__line1-logo {
-  margin-left: 16px;
-  margin-right: 32+16px;
 }
 .header__line1-logo svg {
   width: 80px;
@@ -121,10 +119,19 @@ header {
   stroke: rgba(192, 180, 214, 0.78);
 }
 
-.header__line1-nav-icon svg {
+// .header__line1-nav-icon svg {
+//   margin-left: 8px;
+// }
+// .header__line1-nav-icon:nth-child(1) svg{
+//   margin-left: 0;
+// }
+
+.header__line1-nav-icon-element{
   margin-left: 8px;
 }
-
+.header__line1-nav-icon-element:nth-child(1){
+  margin-left: 0;
+}
 .header__line2 {
   justify-content: center;
   margin-top: 8px;
@@ -176,8 +183,6 @@ header {
   margin-right: 8px;
 }
 
-.header__mobile-menu-search {
-}
 
 .header__mobile-menu-button-search {
   padding: 0;
@@ -187,6 +192,7 @@ header {
   background-color: transparent;
   cursor: pointer;
   margin-top: 4px;
+  margin-right: 24px+8px;
 }
 
 .header__mobile-menu-button-search svg path {

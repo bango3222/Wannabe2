@@ -56,9 +56,10 @@
 .lk-info-btn {
   display: flex;
   justify-content: space-between;
-  max-width: 765px;
+  // max-width: 765px;
   width: 100%;
-  align-items: flex-end;
+  // align-items: flex-end;
+  align-items: center;
   flex-wrap: wrap;
 }
 .lk-info-without-editing-btn {
@@ -86,6 +87,7 @@
   letter-spacing: 0.005em;
   font-weight: 300;
   margin-top: 16px;
+  margin-right: 14px;
   transition: 0.3s ease-in;
 }
 .lk-info-btn-main:hover {

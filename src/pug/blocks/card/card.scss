@@ -141,7 +141,7 @@
   box-sizing: border-box;
 
 
-  background: #D6D6D6;
+  background: #C0B4D6;
   border-radius: 4px;
   display: flex;
   align-items: center;
@@ -157,12 +157,12 @@
   margin-top: 16px;
 
   &:hover{
-    background: #C0B4D6;
+    background: $hover;
   }
 
   opacity: 0;
   pointer-events: none;
-  display: none;
+  // display: none;
 
 
   @media (max-width: 816px) {
