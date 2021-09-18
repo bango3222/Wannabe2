@@ -39,6 +39,9 @@ new Swiper('.block_with_cards-element', {
             slidesPerView: 4,
         },
     },
+    pagination: {
+        el: ".swiper-pagination"
+    },
     watchOverflow: true,
 })
 
